@@ -1,0 +1,74 @@
+#articles{
+    top: 400px;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    background-color: white;
+    border-radius: 20px;
+    height: 400px;
+    overflow-y: scroll;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#articles::-webkit-scrollbar {
+    width: 0;
+}
+.article{
+    width: 90%;
+    background-color: #dfe6e9;
+    margin: 10px 5%;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: solid silver 2px;
+    pointer-events: auto;
+    position: relative;
+}
+.article h1{
+    max-width: 90%;
+    font-size: 24px;
+    display:inline-block;
+    padding: 2px 20px;
+    background: #a6e5a6;
+    border-radius: 20px 0 20px 0;
+    box-sizing: border-box;
+    border-bottom: solid white 3px;
+    border-right: solid white 3px;
+}
+.article h2{
+    margin: 10px 20px;
+    text-indent: 5px;
+    font-size: 22px;
+}
+.article h1::selection,.article h2::selection{
+    text-underline: black;
+}
+.btn {
+    background: transparent;
+    border: none;
+    padding: 7px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.edit{
+    right: 40px;
+    margin-top: 2px;
+    font-size: 20px;
+    color: yellow;
+}
+.delete{
+    color: red;
+}
+#back
+{
+    background: rgba(0,0,0,0.4);
+    width:100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+}
